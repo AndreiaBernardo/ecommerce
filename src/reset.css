@@ -1,0 +1,84 @@
+/* Reset.css baseado no Modern CSS Reset de Andy Bell */
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove margem padrão */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove estilos de lista padrão */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Define altura do corpo como mínimo 100vh */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Torna as imagens mais fáceis de trabalhar */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Herança de fontes para inputs e botões */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove todas as animações e transições para pessoas que preferem não vê-las */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Remove decoração de links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remove estilos padrão de tabelas */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
