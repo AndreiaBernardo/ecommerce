@@ -86,3 +86,35 @@
     display: flex;
     gap: 0.625rem; /* 10px / 16px */
 }
+
+@media (max-width: 768px ) {
+    .grid-section{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat( 5, auto); /* 300px / 16px */
+        grid-template-areas:
+            "homem homem"
+            "tenis-pretoazul tenis-pretoazul"
+            "mulher tenis-colorido"
+            "mulher tenis-cinza"
+            "tenis-roxo tenis-roxo";
+            max-width: 100%;
+            gap: 0.625rem;
+    }
+
+    .homem{
+        min-height: 31.25rem;
+    }
+
+    .mulher{
+        min-height: 370px;
+    }
+
+    .tenis-pretoazul{
+        min-height: 190px;
+    }
+
+    .tenis-roxo{
+        min-height: 190px;
+    }
+    
+}

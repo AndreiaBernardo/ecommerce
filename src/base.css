@@ -13,7 +13,12 @@ body {
   max-width: 85rem; /* 1360px / 16px */
 }
 
-
+@media (max-width: 1280px) {
+  body {
+    padding: .625rem;
+  }
+  
+}
 
 
 .btn {
