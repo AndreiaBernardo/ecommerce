@@ -4,7 +4,7 @@
     top: 3.75rem; /* 60px / 16px */
     left: 50%;
     transform: translate(-50%);
-    width: calc(100% - 13.125rem); /* 210px / 16px */
+    width: 1260px; /* 210px / 16px */
     border-radius: 0.9375rem; /* 15px / 16px */
     z-index: 999;
     display: flex;
@@ -49,9 +49,11 @@
 
 .nav-container{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
     align-items: center;
+    flex: 1;
+    margin-left: 10rem;
 }
 
 .menu-toggle{
